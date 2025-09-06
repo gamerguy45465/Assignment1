@@ -30,10 +30,11 @@ States:
 
 
 Actions To Take:
-A = Take Wolf
-B = Take Goat
-C = Take Cabbage
-D = Farmer Alone
+A = Take Wolf = 1000 = 8
+B = Take Goat = 0100 = 4
+C = Take Cabbage = 0010 = 2
+D = Farmer Alone = 0001 = 1
+
 
 Actions(0) -> {A, B, C, D}
 Actions(1) -> {None}
@@ -63,8 +64,8 @@ Actions(15) -> {None}
 States:
 (Wolf, Goat, Cabbage, Farmer)
 
-0 = Start
-1 = Other Side
+0 = Left
+1 = Right
 
 0   0000
 1	0001
@@ -90,6 +91,7 @@ B = Take Goat
 C = Take Cabbage
 D = Farmer Alone
 
+(0,0,0,0)
 
 Transition(0, A) -> 9
 Transition(0, B) -> 5
@@ -117,6 +119,8 @@ Transition(11, D) -> 10
 Transition(13, A) -> 4
 Transition(13, B) -> 8
 Transition(13, D) -> 12
+
+
 
 
 
